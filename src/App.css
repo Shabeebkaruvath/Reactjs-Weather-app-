@@ -1,0 +1,53 @@
+.App {
+  top: 0;
+  text-align: center;
+  background-image: url("./snow.jpg");
+  width: 100%;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main input {
+  width: 50%;
+  height: 5vh;
+  background: cornsilk;
+  border: 1px solid black;
+  border-radius: 0px;
+  font-size: larger;
+  text-transform: uppercase;
+}
+.main input:hover{
+  width: 50%;
+  height: 5vh;
+  background: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 0px;
+  color: white;
+  font-size: larger;
+}
+.data1 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  border: 1px solid white;
+  margin-top: 30px;
+  height: 40vh;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
+.data {
+  justify-content: center;
+  display: flex;
+}
