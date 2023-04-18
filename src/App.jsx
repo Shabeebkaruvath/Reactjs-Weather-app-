@@ -12,7 +12,7 @@ function App() {
 
   useEffect(() => {
     let apiUrl =
-      "https://api.openweathermap.org/data/2.5/weather?q=berlin&appid=0afba858d74acf07dcdb6993e6fbd8d4&unit=metric";
+      "https://api.openweathermap.org/data/2.5/weather?q=kochi&appid=0afba858d74acf07dcdb6993e6fbd8d4&unit=metric";
     axios
       .get(apiUrl)
       .then((res) =>
