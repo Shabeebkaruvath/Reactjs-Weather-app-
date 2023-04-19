@@ -3,6 +3,10 @@ import search from "./search.png";
 import wind from "./wind.png";
 import pressure from "./pressure.png";
 import humidity from "./humidity.png";
+import cloud from "./cloud.jpg";
+import snow from "./snow.jpg";
+import sunny from "./sunny.jpg";
+import desert from "./desert.jpg";
 import {  useState } from "react";
 import axios from "axios";
 
@@ -17,39 +21,47 @@ function App() {
     speed: 3.44,
   });
 
+ 
+
   const [city, setCity] = useState("");
   const handle = () => {
     if (city !== "") {
-      let apiUrl =
-        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=0afba858d74acf07dcdb6993e6fbd8d4&unit=metric`;
-      axios
-        .get(apiUrl)
-        .then((res) =>
-          setData({
-            ...data,
-            temparature: res.data.main.temp,
-            city: res.data.name,
-            country: res.data.sys.country,
-            Discription: res.data.weather[0].description,
-            humidity: res.data.main.humidity,
-            pressure: res.data.main.pressure,
-            speed: res.data.wind.speed,
-          })
-        )
-        .catch((err) => console.log(err));
+      let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=0afba858d74acf07dcdb6993e6fbd8d4&unit=metric`;
+      axios.get(apiUrl).then((res) =>
+        setData({
+          ...data,
+          temparature: res.data.main.temp,
+          city: res.data.name,
+          country: res.data.sys.country,
+          Discription: res.data.weather[0].description,
+          humidity: res.data.main.humidity,
+          pressure: res.data.main.pressure,
+          speed: res.data.wind.speed,
+        }).console.log(res.data)
+      );
     }
   };
 
+  let backgroundImage = "";
+  if (data.temparature !== null) {
+    if (Math.round(data.temparature - 273.15) <= 0) {
+      backgroundImage = snow;
+    } else if (1 <= Math.round(data.temparature - 273.15) <= 25) {
+      backgroundImage = cloud;
+    } else if (26 <= Math.round(data.temparature - 273.15) <= 35) {
+      backgroundImage = sunny;
+    } else if (Math.round(data.temparature - 273.15) < 36) {
+      backgroundImage = desert;
+    }
+  }
   return (
-    <div className="App"
-     
-     >
+    <div className="App" style={{ backgroundImage: `url(${backgroundImage})` }}>
       <div className="main">
         <input
           type="text"
           name="city name"
           required
-          placeholder="Enter city name"
+          placeholder="city name"
           onChange={(e) => setCity(e.target.value)}
         />
         <button type="submit" onClick={handle}>

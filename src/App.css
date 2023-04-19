@@ -1,7 +1,7 @@
 .App {
   top: 0;
   text-align: center;
-  background-image: url("./snow.jpg");
+   
   width: 100%;
   background-size: cover;
   height: 100vh;
@@ -11,7 +11,7 @@
 }
 
 .main {
-  top: 0;
+  margin-top: 30px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -27,6 +27,7 @@
   border-radius: 0px;
   font-size: larger;
   text-transform: uppercase;
+  padding-right: 2px;
 }
 .main input:hover {
   width: 40%;
@@ -36,7 +37,6 @@
   border-radius: 0px;
   color: rgb(255, 0, 0);
   font-size: larger;
-  border-radius: 0px;
 }
 
 .data1 {
@@ -61,10 +61,14 @@
 .data {
   justify-content: center;
   display: flex;
-  height: 70%;
+  height: 80%;
 }
 button img {
-  height: 32px;
+  height: 33px;
+  border-radius: 15px;
+}
+button {
+  background-color: burlywood;
 }
 .logo-class {
   display: flex;
@@ -83,8 +87,12 @@ button img {
 }
 
 @media (220px <= width <= 320px) {
+  button {
+    border-radius: 0px;
+    background-color: burlywood;
+  }
   .main {
-    top: 0;
+    margin-top: 30px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -135,7 +143,7 @@ button img {
   .data {
     justify-content: center;
     display: flex;
-    height: 70%;
+    height: 60%;
   }
   .logo-class {
     display: flex;
@@ -154,8 +162,12 @@ button img {
   }
 }
 @media (321px <= width <= 375px) {
+  button {
+    border-radius: 0px;
+    background-color: burlywood;
+  }
   .main {
-    top: 0;
+    margin-top: 30px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -182,7 +194,7 @@ button img {
     border-radius: 0px;
   }
   button img {
-    height: 24px;
+    height: 29px;
   }
   .data1 {
     display: flex;
@@ -206,7 +218,7 @@ button img {
   .data {
     justify-content: center;
     display: flex;
-    height: 70%;
+    height: 60%;
   }
   .logo-class {
     display: flex;
@@ -225,8 +237,12 @@ button img {
   }
 }
 @media (376px <= width <= 425px) {
+  button {
+    border-radius: 0px;
+    background-color: burlywood;
+  }
   .main {
-    top: 0;
+    margin-top: 30px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -277,7 +293,157 @@ button img {
   .data {
     justify-content: center;
     display: flex;
-    height: 70%;
+    height: 60%;
+  }
+  .logo-class {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 0;
+    align-items: stretch;
+    height: 20%;
+  }
+  .logo-class h4 {
+    margin: 7px;
+    font-size: 13px;
+  }
+  .logo-class img {
+    width: 20px;
+  }
+}
+@media (426px <= width <= 550px) {
+  button {
+    border-radius: 0px;
+    background-color: burlywood;
+  }
+  .main {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+  }
+  .main input {
+    width: 60%;
+    height: 5vh;
+    background: cornsilk;
+    border: 1px solid black;
+    border-radius: 0px;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+  .main input:hover {
+    width: 60%;
+    height: 5vh;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 0px;
+    color: rgb(255, 0, 0);
+    font-size: 13px;
+    border-radius: 0px;
+  }
+  button img {
+    height: 24px;
+  }
+  .data1 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 30px;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.24);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    border-radius: 35px;
+    font-family: serif;
+    text-transform: uppercase;
+    height: 100%;
+  }
+  .data {
+    justify-content: center;
+    display: flex;
+    height: 60%;
+  }
+  .logo-class {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 0;
+    align-items: stretch;
+    height: 20%;
+  }
+  .logo-class h4 {
+    margin: 7px;
+    font-size: 13px;
+  }
+  .logo-class img {
+    width: 20px;
+  }
+}
+@media (551px <= width <= 650px) {
+  button {
+    border-radius: 0px;
+    background-color: burlywood;
+  }
+  .main {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+  }
+  .main input {
+    width: 60%;
+    height: 5vh;
+    background: cornsilk;
+    border: 1px solid black;
+    border-radius: 0px;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+  .main input:hover {
+    width: 60%;
+    height: 5vh;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 0px;
+    color: rgb(255, 0, 0);
+    font-size: 13px;
+    border-radius: 0px;
+  }
+  button img {
+    height: 24px;
+  }
+  .data1 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 30px;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.24);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    border-radius: 35px;
+    font-family: serif;
+    text-transform: uppercase;
+    height: 100%;
+  }
+  .data {
+    justify-content: center;
+    display: flex;
+    height: 60%;
   }
   .logo-class {
     display: flex;
