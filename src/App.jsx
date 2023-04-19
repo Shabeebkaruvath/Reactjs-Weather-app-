@@ -8,13 +8,13 @@ import axios from "axios";
 
 function App() {
   const [data, setData] = useState({
-    temparature: 254.8,
-    city: "sample",
-    country: "in",
-    Discription: "Clowdy",
-    humidity: 1.6,
-    pressure: 1.3,
-    speed: 1.9,
+    temparature: 238.15,
+    city: "ANTARCTICA",
+    country: "",
+    Discription: "snow",
+    humidity: 100,
+    pressure: 1050,
+    speed: 3.44,
   });
 
   const [city, setCity] = useState("");
