@@ -31,18 +31,18 @@
 .main input:hover {
   width: 40%;
   height: 5vh;
-  
+
   border: 1px solid rgb(0, 0, 0);
   border-radius: 0px;
   color: rgb(255, 0, 0);
   font-size: larger;
   border-radius: 0px;
 }
- 
+
 .data1 {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 60%;
   margin-top: 30px;
   height: 40vh;
   justify-content: center;
@@ -56,7 +56,7 @@
   border-radius: 35px;
   font-family: serif;
   text-transform: uppercase;
-  height: 90%;
+  height: 100%;
 }
 .data {
   justify-content: center;
@@ -64,5 +64,234 @@
   height: 70%;
 }
 button img {
-   height: 32px;
+  height: 32px;
+}
+.logo-class {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  padding: 0;
+  align-items: stretch;
+  height: 30%;
+}
+.logo-class h4 {
+  margin-right: 25px;
+  font-size: 20px;
+}
+.logo-class img {
+  width: 25px;
+}
+
+@media (220px <= width <= 320px) {
+  .main {
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+  }
+  .main input {
+    width: 60%;
+    height: 5vh;
+    background: cornsilk;
+    border: 1px solid black;
+    border-radius: 0px;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+  .main input:hover {
+    width: 60%;
+    height: 5vh;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 0px;
+    color: rgb(255, 0, 0);
+    font-size: 13px;
+    border-radius: 0px;
+  }
+  button img {
+    height: 24px;
+  }
+  .data1 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 30px;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.24);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    border-radius: 35px;
+    font-family: serif;
+    text-transform: uppercase;
+    height: 100%;
+  }
+  .data {
+    justify-content: center;
+    display: flex;
+    height: 70%;
+  }
+  .logo-class {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 0;
+    align-items: stretch;
+    height: 20%;
+  }
+  .logo-class h4 {
+    margin: 7px;
+    font-size: 10px;
+  }
+  .logo-class img {
+    width: 20px;
+  }
+}
+@media (321px <= width <= 375px) {
+  .main {
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+  }
+  .main input {
+    width: 60%;
+    height: 5vh;
+    background: cornsilk;
+    border: 1px solid black;
+    border-radius: 0px;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+  .main input:hover {
+    width: 60%;
+    height: 5vh;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 0px;
+    color: rgb(255, 0, 0);
+    font-size: 13px;
+    border-radius: 0px;
+  }
+  button img {
+    height: 24px;
+  }
+  .data1 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 30px;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.24);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    border-radius: 35px;
+    font-family: serif;
+    text-transform: uppercase;
+    height: 100%;
+  }
+  .data {
+    justify-content: center;
+    display: flex;
+    height: 70%;
+  }
+  .logo-class {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 0;
+    align-items: stretch;
+    height: 20%;
+  }
+  .logo-class h4 {
+    margin: 7px;
+    font-size: 13px;
+  }
+  .logo-class img {
+    width: 20px;
+  }
+}
+@media (376px <= width <= 425px) {
+  .main {
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+  }
+  .main input {
+    width: 60%;
+    height: 5vh;
+    background: cornsilk;
+    border: 1px solid black;
+    border-radius: 0px;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+  .main input:hover {
+    width: 60%;
+    height: 5vh;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 0px;
+    color: rgb(255, 0, 0);
+    font-size: 13px;
+    border-radius: 0px;
+  }
+  button img {
+    height: 24px;
+  }
+  .data1 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 30px;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.24);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    border-radius: 35px;
+    font-family: serif;
+    text-transform: uppercase;
+    height: 100%;
+  }
+  .data {
+    justify-content: center;
+    display: flex;
+    height: 70%;
+  }
+  .logo-class {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 0;
+    align-items: stretch;
+    height: 20%;
+  }
+  .logo-class h4 {
+    margin: 7px;
+    font-size: 13px;
+  }
+  .logo-class img {
+    width: 20px;
+  }
 }
