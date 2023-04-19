@@ -18,8 +18,6 @@ function App() {
   });
 
   const [city, setCity] = useState("");
-
-  
   const handle = () => {
     if (city !== "") {
       let apiUrl =
