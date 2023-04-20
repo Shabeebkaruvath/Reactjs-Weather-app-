@@ -12,7 +12,7 @@ import axios from "axios";
 
 function App() {
   const [data, setData] = useState({
-    temparature: 238.15,
+    temparature: 232.15,
     city: "ANTARCTICA",
     country: "",
     Discription: "snow",
@@ -44,13 +44,20 @@ function App() {
 
   let backgroundImage = "";
   if (data.temparature !== null) {
-    if (Math.round(data.temparature - 273.15) <= 0) {
+    if (Math.round(data.temparature - 273.15) <= 0) 
+    {
       backgroundImage = snow;
-    } else if (1 <= Math.round(data.temparature - 273.15) <= 25) {
-      backgroundImage = cloud;
-    } else if (26 <= Math.round(data.temparature - 273.15) <= 35) {
-      backgroundImage = sunny;
-    } else if (Math.round(data.temparature - 273.15) < 36) {
+    }
+    else if (Math.round(data.temparature - 273.15) > 0 && Math.round(data.temparature - 273.15) <= 25) 
+    {
+     backgroundImage = cloud ;
+   }
+     else if (Math.round(data.temparature - 273.15) > 20 && Math.round(data.temparature - 273.15) <=35 )
+      {
+      backgroundImage =  sunny;
+    } 
+    else if (Math.round(data.temparature - 273.15) > 35  )
+     {
       backgroundImage = desert;
     }
   }
