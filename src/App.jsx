@@ -48,7 +48,7 @@ function App() {
     {
       backgroundImage = snow;
     }
-    else if (Math.round(data.temparature - 273.15) > 0 && Math.round(data.temparature - 273.15) <= 25) 
+    else if (Math.round(data.temparature - 273.15) > 0 && Math.round(data.temparature - 273.15) <= 20) 
     {
      backgroundImage = cloud ;
    }
