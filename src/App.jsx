@@ -85,7 +85,7 @@ function App() {
           <h3>
             {data.city}({data.country})
           </h3>
-          <h4>{Math.round(data.temparature - 273.15)}°C</h4>
+          <h4>{Math.round(data.temparature -273.15)}°C</h4>
           <h4>{data.Discription}</h4>
           <div className="logo-class">
             <h4>
