@@ -5,7 +5,6 @@ import pressure from "./pressure.png";
 import humidity from "./humidity.png";
 import cloud from "./cloud.jpg";
 import snow from "./snow.jpg";
-import normal from "./normal.jpg";
 import sunny from "./sunny.jpg";
 import desert from "./desert.jpg";
 import {  useState } from "react";
@@ -38,7 +37,7 @@ function App() {
           humidity: res.data.main.humidity,
           pressure: res.data.main.pressure,
           speed: res.data.wind.speed,
-        },console.log(res.data))
+        }).console.log(res.data)
       );
     }
   };
@@ -49,11 +48,7 @@ function App() {
     {
       backgroundImage = snow;
     }
-    else if (Math.round(data.temparature - 273.15) > 0 && Math.round(data.temparature - 273.15) <= 10) 
-    {
-     backgroundImage =  normal ;
-   }
-    else if (Math.round(data.temparature - 273.15) > 10 && Math.round(data.temparature - 273.15) <= 20) 
+    else if (Math.round(data.temparature - 273.15) > 0 && Math.round(data.temparature - 273.15) <= 20) 
     {
      backgroundImage = cloud ;
    }
@@ -85,7 +80,7 @@ function App() {
           <h3>
             {data.city}({data.country})
           </h3>
-          <h4>{Math.round(data.temparature -273.15)}°C</h4>
+          <h4>{Math.round(data.temparature - 273.15)}°C</h4>
           <h4>{data.Discription}</h4>
           <div className="logo-class">
             <h4>
