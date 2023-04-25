@@ -6,6 +6,7 @@ import humidity from "./humidity.png";
 import cloud from "./cloud.jpg";
 import snow from "./snow.jpg";
 import sunny from "./sunny.jpg";
+import normal from "./normal.jpg";
 import desert from "./desert.jpg";
 import {  useState } from "react";
 import axios from "axios";
@@ -48,7 +49,11 @@ function App() {
     {
       backgroundImage = snow;
     }
-    else if (Math.round(data.temparature - 273.15) > 0 && Math.round(data.temparature - 273.15) <= 20) 
+    else if (Math.round(data.temparature - 273.15) > 0 && Math.round(data.temparature - 273.15) <= 10) 
+    {
+     backgroundImage = normal ;
+   }
+    else if (Math.round(data.temparature - 273.15) > 10 && Math.round(data.temparature - 273.15) <= 20) 
     {
      backgroundImage = cloud ;
    }
